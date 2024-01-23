@@ -1,36 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&&display=swap');
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #0D1B2A;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #778DA9;
+    border-radius: 2px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #415A77;
+  }
+
+/* Navbar */
+nav {
+    position: fixed;
+    padding-top: 2em !important;
+    font-weight: bold;
+    width: 100%;
+}
+
 .parent-container {
     display: flex;
     justify-content: flex-end; /* Push the navbar-collapse to the right */
-  }
-.mt-4{
-    font-size: large;
-}  
-.card-text{
-    font-size: large;
 }
-footer {
-    background-color: #333; /* Choose your desired background color */
-    color: white;
-    text-align: center;
-    padding: 5px; /* Add padding for better appearance */
-    height: auto; /* Set the height to auto or adjust as needed */
-    width: 100%;
+
+.no-wrap {
+    white-space: nowrap;
 }
-.btn{
-    margin-right: 10px;
-    margin-bottom: 10px;
+
+.who {
+    font-size: 2.5em;
+    font-family: 'Cardo', serif;
+    user-select: none;
 }
-.card{
+
+h2 {
+    font-size: 4em;
+}
+
+@media (max-width: 768px) {
+    .parent-container {
+        justify-content: flex-start; /* Adjust for smaller screens */
+    }
+}
+
+/* Body */
+body {
+    background-image: url("drmeg.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #0D1B2A;
+    background-size: 100%;
+    backdrop-filter: brightness(70%);
+    color: #F5F5F4;
+    width: 100%; /* Set the body width to 100% for responsiveness */
+    font-size: medium; /* Adjust the font size for better readability on mobile */
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0; /* Remove default body margin */
+}
+
+/* Cards and Buttons */
+.card {
     margin-right: 10px;
     justify-content: center;
     align-items: center;
 }
-.card-img-top{
-    width: 95%;
-    margin-top: 10px;
+
+.card-img-top {
+    width: 100%; /* Make images responsive within the card */
+    margin-top: 1em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card-img-top:hover{
-    transform: scale(1.05); /* Increase the size by 10% on hover */
+
+.card-img-top:hover {
+    transform: scale(1.02); /* Increase the size by 5% on hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
 }
+
+.btn {
+    margin: 1em 0 0 0;
+    background-color: #1B263B;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #415A77;
+}
+
+.badass {
+    font-family: 'Almendra', serif;
+    font-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: #F5F5F4;
+    -webkit-text-stroke: 0.02em #0D1B2A;
+}
+
+.service {
+    font-size: 80%;
+    font-family: 'Roboto', sans serif;
+}
+
+/* Main Content */
+.quote {
+    margin-bottom: 1em; /* Adjust spacing for the quote on smaller screens */
+}
+
+.card {
+    background-color: rgba(13, 27, 42, 0.2);
+    color: #F5F5F4;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.about-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1em;
+}
+
+.nav-link {
+    color: #778DA9;
+
+}
+
+/* Hover Color for Navbar Links */
+.nav-link:hover {
+    color: #0D1B2A; /* Maintain the hover color change for better visibility on mobile */
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.front {
+    margin-top: -5em;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials {
+    background-color: #13283E;
+    color: white;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+}
+
+a:link {
+    color: #3F5671;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #778DA9;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #F5F5F4;
+}
+
+.img-corner {
+    border-radius: 10px;
+    height: 23em;
+    width: 35em;
+    object-fit: fill;
+}
+
+.underline {
+    text-decoration: underline !important;
+}
+
+
+/*https://coolors.co/0d1b2a-1b263b-3f5671-778da9-f5f5f4*/
