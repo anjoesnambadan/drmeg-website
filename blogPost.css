@@ -1,0 +1,80 @@
+.parent-container {
+    display: flex;
+    justify-content: flex-end; /* Push the navbar-collapse to the right */
+  }
+.mt-4{
+    font-size: x-large;
+}
+ @media (max-width: 768px) {
+            .mt-4 {
+                font-size: larger; /* Smaller font size for smaller screens */
+            }
+        }
+
+        /* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    .mt-4 {
+        font-size: large; /* Even smaller font size for smaller screens */
+    }
+}
+    
+h2{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%; 
+}  
+h4{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.centered-list {
+    text-align: center;
+}
+.card-text{
+    font-size: large;
+}
+footer {
+    background-color: #333; /* Choose your desired background color */
+    color: white;
+    text-align: center;
+    padding: 5px; /* Add padding for better appearance */
+    height: auto; /* Set the height to auto or adjust as needed */
+    width: 100%;
+}
+.img-fluid{
+    height: 450px;
+    width: auto;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .img-fluid {
+        height: 450px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    .img-fluid {
+        height: 450px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+
+ul {
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the list */
+}
+ul li{
+    text-align: left;
+    margin-left:70px ;
+}
+
+
