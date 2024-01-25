@@ -63,7 +63,7 @@ body {
     justify-content: flex-end; /* Push the navbar-collapse to the right */
   }
 .mt-4{
-    font-size: large;
+    font-size: x-large;
 }
  @media (max-width: 768px) {
             .mt-4 {
@@ -177,8 +177,4 @@ a:hover {
     font-size: 3em;
     font-family: 'Cardo', serif;
     user-select: none;
-}
-
-.blog-image {
-    border-radius: 10px;
 }

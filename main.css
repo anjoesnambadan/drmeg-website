@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&&display=swap');
 
 
@@ -34,6 +34,15 @@ nav {
     justify-content: flex-end; /* Push the navbar-collapse to the right */
 }
 
+.card-container {
+    margin-left: 7em;
+    width: 100vw;
+}
+
+.card-text {
+    width: 30em;
+}
+
 .no-wrap {
     white-space: nowrap;
 }
@@ -56,12 +65,15 @@ h2 {
 
 /* Body */
 body {
+    height: 100vh;
+    width: 100vw;
     background-image: url("drmeg.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-color: #0D1B2A;
-    background-size: 100%;
+    background-size: 100% 100vh;
     backdrop-filter: brightness(70%);
+    background-clip: border-box;
     color: #F5F5F4;
     width: 100%; /* Set the body width to 100% for responsiveness */
     font-size: medium; /* Adjust the font size for better readability on mobile */
@@ -98,22 +110,26 @@ body {
 }
 
 .badass {
-    font-family: 'Almendra', serif;
-    font-size: 200%;
+    font-size: 150%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: #F5F5F4;
-    -webkit-text-stroke: 0.02em #0D1B2A;
+    -webkit-text-stroke: 0.01em #0D1B2A;
 }
 
 .service {
     font-size: 80%;
-    font-family: 'Roboto', sans serif;
 }
 
 /* Main Content */
 .quote {
     margin-bottom: 1em; /* Adjust spacing for the quote on smaller screens */
+}
+
+.quote-text {
+    font-family: Cardo, serif;
+    font-style: italic;
+    font-size: 130%;
 }
 
 .card {
@@ -129,13 +145,17 @@ body {
 }
 
 .nav-link {
-    color: #778DA9;
+    color: #c0d7f5;
 
+}
+
+.nav-link:visited{
+    color: #c0d7f5;
 }
 
 /* Hover Color for Navbar Links */
 .nav-link:hover {
-    color: #0D1B2A; /* Maintain the hover color change for better visibility on mobile */
+    color: #9badc5; /* Maintain the hover color change for better visibility on mobile */
 }
 
 
@@ -179,8 +199,8 @@ a:hover {
 
 .img-corner {
     border-radius: 10px;
-    height: 23em;
-    width: 35em;
+    height: fit-content;
+    width: 32em;
     object-fit: fill;
 }
 
@@ -188,5 +208,8 @@ a:hover {
     text-decoration: underline !important;
 }
 
+.text-centre {
+    margin-left: -4em;
+}
 
 /*https://coolors.co/0d1b2a-1b263b-3f5671-778da9-f5f5f4*/
