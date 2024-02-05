@@ -73,7 +73,9 @@ body {
     background-color: #0D1B2A;
     background-size: 100% 100vh;
     backdrop-filter: brightness(70%);
+    background-size: 100% 100vh;
     background-clip: border-box;
+
     color: #F5F5F4;
     width: 100%; /* Set the body width to 100% for responsiveness */
     font-size: medium; /* Adjust the font size for better readability on mobile */
@@ -212,4 +214,124 @@ a:hover {
     margin-left: -4em;
 }
 
-/*https://coolors.co/0d1b2a-1b263b-3f5671-778da9-f5f5f4*/
+.newline {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    body{
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: none;
+        background-color: #09131D !important;
+        backdrop-filter: brightness(100%);
+
+    }
+
+    body > * {
+        width: 100% !important;
+    }
+
+    .newline {
+        display: inline;
+    }
+
+    .img-corner{
+        height: auto;
+        width: 100%;
+    }
+
+    .card-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    main {
+        width: 50vh;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .navbar-toggler {
+        margin-left: -2vw;
+    }
+
+    .lead {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-top: clamp(1px, 30vw, 1em);
+        font-size: 2em;
+    }
+
+    .who {
+        font-size: 2em;
+    }
+
+    .card-text {
+        width: 100%;
+    }
+
+    .parent-container {
+        justify-content: flex-start;
+    }
+
+    .social-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    main{
+        flex:2;
+    }
+
+    footer {
+        width: 100% !important;
+    }
+
+    nav {
+        width: 100% !important;
+    }
+
+    .carousel {
+        width: 100% !important;
+    }
+
+    .text-centre {
+        margin-left: 0;
+    }
+
+    .socials {
+        width: 15em;
+        background-color: #09131D;
+    }
+
+    nav {
+        width: 100% !important;
+    }
+}

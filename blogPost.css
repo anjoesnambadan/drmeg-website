@@ -50,12 +50,14 @@ nav {
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #0D1B2A;
+    background-color: hsl(211, 53%, 7.7%);
     color: #F5F5F4;
     width: 100%; /* Set the body width to 100% for responsiveness */
     font-size: medium; /* Adjust the font size for better readability on mobile */
     font-family: 'Space Grotesk', sans-serif;
     margin: 0; /* Remove default body margin */
+    text-align: justify;
+    text-justify: inter-character;
 }
 
 .parent-container {
@@ -64,18 +66,6 @@ body {
   }
 .mt-4{
     font-size: large;
-}
- @media (max-width: 768px) {
-            .mt-4 {
-                font-size: larger; /* Smaller font size for smaller screens */
-            }
-        }
-
-        /* Media query for screens smaller than 480px */
-@media (max-width: 480px) {
-    .mt-4 {
-        font-size: large; /* Even smaller font size for smaller screens */
-    }
 }
     
 h2{
@@ -113,13 +103,135 @@ p{
 }
 
 /* Media query for screens smaller than 480px */
-@media (max-width: 480px) {
-    .img-fluid {
-        height: 450px;
-        width: auto;
-        margin-bottom: 20px;
+@media (max-width: 1000px) {
+
+    body{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        font-size: 1em;
+        overflow-x: hidden;
     }
-}
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-left: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .navbar-toggler {
+        margin-left: -2vw;
+    }
+
+    .card-text {
+        width: 100%;
+        font-size: 95%;
+    }
+
+    .parent-container {
+        justify-content: flex-start;
+    }
+
+    .socials{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw !important;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .mt-4 {
+        font-size: 100%;
+        width: 80vw;
+        margin: 0 !important;
+    }
+
+    .blog-image {
+        border-radius: 10px;
+        height: 60vw !important;
+        width: 80vw !important;
+        margin-left: 1.3em !important;
+    }
+
+    .blog-image-c {
+        border-radius: 10px;
+        height: 60vw !important;
+        width: 80vw !important;
+        margin-left: 0 !important;
+        margin-bottom: 1em;
+    }
+
+    .blog-image-d {
+        border-radius: 10px;
+        height: 60vw !important;
+        width: 80vw !important;
+        margin-left: 0 !important;
+        margin-bottom: 1em;
+    }
+
+    p span {
+        font-size: small;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    strong {
+        font-size: 1.1em;
+    }
+
+    .left-image {
+        margin-left: 0 !important;
+    }
+
+    .right-image {
+        margin-right: 0 !important;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .hiden {
+        display: inline;
+    }
+
+    .margin-left-8 {
+        margin-left: 0 !important;
+    }
+
+    .margin-left-9 {
+        margin-left: 1em !important;
+    }
+
+    .width-24 {
+        width: 19em !important;
+    }
+
+    .final {
+        margin-left: 1.5em !important;
+    }
+} 
 
 ul {
     padding: 0; /* Remove default padding */
@@ -144,7 +256,7 @@ footer {
 }
 
 a:link {
-    color: #3F5671;
+    color: #729dcf;
     text-decoration: none;
 }
 
@@ -181,4 +293,48 @@ a:hover {
 
 .blog-image {
     border-radius: 10px;
+    width: 50%;
+    height: 30vw;
+    width: 35vw;
+}
+
+.blog-image-c {
+    border-radius: 10px;
+    width: 50%;
+    height: 30vw;
+    width: 35vw;
+}
+
+.blog-image-d {
+    border-radius: 10px;
+    width: 50%;
+    height: 30vw;
+    width: 35vw;
+    margin-top: 6em;
+}
+
+.content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mt-5-custom {
+    text-align: center;
+    font-size: medium;
+}
+
+.hiden {
+    display: hidden;
+}
+
+.margin-left-8 {
+    margin-left: 8em;
+}
+
+.margin-left-9 {
+    margin-left: 9em;
+}
+
+.width-24 {
+    width: 24em;
 }
